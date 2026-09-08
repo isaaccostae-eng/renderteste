@@ -4,6 +4,8 @@ st.header('Jogando uma moeda')
 
 st.write('Ainda não é um aplicativo funcional. Em construção.')
 
+import streamlit as st
+
 st.header('Jogando uma moeda')
 
 number_of_trials = st.slider('Número de tentativas?', 1, 1000, 10)
