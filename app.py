@@ -4,12 +4,6 @@ st.header('Jogando uma moeda')
 
 st.write('Ainda não é um aplicativo funcional. Em construção.')
 
-number_of_trials = st.slider('Número de tentativas?', 1, 1000, 10)
-start_button = st.button('Executar')
-
-if start_button:
-    st.write(f'Executando o experimento de {number_of_trials} tentativas.')
-
 import scipy.stats
 import time
 
@@ -32,9 +26,6 @@ def toss_coin(n): # função que emula o lançamento de uma moeda
         time.sleep(0.05)
 
     return mean
-
-number_of_trials = st.slider('Número de tentativas?', 1, 1000, 10)
-start_button = st.button('Executar')
 
 if start_button:
     st.write(f'Executando o experimento de {number_of_trials} tentativas.')
